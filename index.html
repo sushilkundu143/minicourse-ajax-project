@@ -8,31 +8,74 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- AIzaSyA43N2mB7XXlTKa5kAl9r3r1PR38D6whHg -->
+<div class="container mt-4 mb-4">
+    <!--
     <form id="form-container" class="form-container">
         <label for="street">Street: </label><input type="text" id="street" value="">
         <label for="city">City: </label><input type="text" id="city" value="">
         <button id="submit-btn">Submit</button>
     </form>
+    -->
+    <form class="form-inline"  id="form-container">
+      <div class="col-sm-12 m-auto">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="md-form">
+                    <input type="text" id="street" value="" class="form-control">
+                    <label for="street">Type Street Name</label>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="md-form">
+                    <input type="text" id="city" value="" class="form-control">
+                    <label for="street">Type City Name</label>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="md-form mb-0">
+                    <input type="submit" class="btn btn-primary btn-lg" id="submit-btn" value="Submit">
+                </div>
+            </div>
+        </div>
+     </div>
+    </form>
 
     <hr>
-
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
-
-
-    <div class="wikipedia-container">
-        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+   <div class="card p-3">
+        <div class="row">
+            <div class="col-sm-8 text-center">
+                <!--<h2 id="greeting" class="greeting main-title h2-responsive">Where do you want to live?</h2> -->
+                
+                <div class="nytimes-container text-left" id="nytimes-container">
+                    <h4 id="nytimes-header" class="h4-responsive">New York Times Articles</h4>
+                    <hr>
+                    <ul id="nytimes-articles" class="article-list">
+                            You already know that NYTimes.com is an unparalleled source of news and information. But now it's a premier source of data, too — why just read the news when you can hack it? 
+                        <br> What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!
+                    </ul>
+                </div>
+                <img class="img-fluid" id="googleSteetView" src="" />
+            </div>
+            <div class="col-sm-4">
+                <!--Panel-->
+                <div class="card wikipedia-container text-left">
+                    <div class="card-header primary-color white-text" id="wikipedia-header">
+                            Relevant Wikipedia Links
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title h4-responsive">Special title treatment</h4>
+                        <ul id="wikipedia-links" class="card-text">Type in an address above and find relevant Wikipedia articles here!</ul>
+                    </div>
+                </div>
+                <!--/.Panel-->
+            </div>
+        </div>
     </div>
-
-
-    <div class="nytimes-container">
-        <h3 id="nytimes-header">New York Times Articles</h3>
-        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
-    </div>
-
     <script src="js/libs/jquery.min.js"></script>
+    
     <script src="js/mdb.min.js"></script>
+    <scrip src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
