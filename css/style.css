@@ -33,6 +33,15 @@ body {background-color: #FFF;}
     padding: 0;
 }
 
+.fixwidth {
+    max-width: 600px;
+    border: 1px solid #ddd;
+}
+
+p.responsive, ul, li {
+ font-size: 0.9rem;
+}
+
 .article {
     list-style-type: none;
     padding:10px 0;

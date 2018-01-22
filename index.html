@@ -27,10 +27,23 @@
                 </div>
             </div>
             <div class="col-sm-5">
+                <!--
                 <div class="md-form">
                     <input type="text" id="city" value="" class="form-control">
                     <label for="street">Type City Name</label>
                 </div>
+                -->
+                <div class="md-form">
+                    <input type="search" id="city" class="form-control mdb-autocomplete">
+                    <button class="mdb-autocomplete-clear">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                    </button>
+                    <label for="form-autocomplete" class="active">Type City Name</label>
+                </div>
+                
             </div>
             <div class="col-sm-2">
                 <div class="md-form mb-0">
@@ -55,7 +68,7 @@
                         <br> What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!
                     </ul>
                 </div>
-                <img class="img-fluid" id="googleSteetView" src="" />
+                <img class="img-fluid  mt-4 mb-4 fixwidth" id="googleSteetView" src="img/google-streetview.jpg" />
             </div>
             <div class="col-sm-4">
                 <!--Panel-->
@@ -73,7 +86,7 @@
         </div>
     </div>
     <script src="js/libs/jquery.min.js"></script>
-    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/mdb.min.js"></script>
     <scrip src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
