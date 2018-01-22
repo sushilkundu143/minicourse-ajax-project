@@ -379,7 +379,6 @@ var cities = [
     "Liberta",
     "Falmouth"
 ];
-console.log(cities);
 $('#city').mdb_autocomplete({
      data: cities
 });
